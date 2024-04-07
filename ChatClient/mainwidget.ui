@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWidget</class>
+ <widget class="QWidget" name="MainWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>650</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>650</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QListWidget::item {
+    height: 30px; /* 设置项的高度 */
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_5">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="friendBtn">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+	color:red;
+	font: 12pt &quot;Microsoft YaHei UI&quot;;
+}
+
+QPushButton:hover
+{
+	color: rgb(255, 255, 0);
+	border-color: rgb(255, 255, 127);
+}
+
+QPushButton:pressed
+{
+	border:none;
+	background-color: rgb(85, 170, 255);
+}
+</string>
+         </property>
+         <property name="text">
+          <string>好友列表</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="groupBtn">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+	color:red;
+	font: 12pt &quot;Microsoft YaHei UI&quot;;
+}
+
+QPushButton:hover
+{
+	color: rgb(255, 255, 0);
+	border-color: rgb(255, 255, 127);
+}
+
+QPushButton:pressed
+{
+	border:none;
+	background-color: rgb(85, 170, 255);
+}
+</string>
+         </property>
+         <property name="text">
+          <string>群列表</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QStackedWidget" name="stackWidget">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <widget class="QWidget" name="page">
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QListWidget" name="friendList"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="page_2">
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QListWidget" name="groupList">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <widget class="QPushButton" name="addFriend">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	color:red;
+	font: 12pt &quot;Microsoft YaHei UI&quot;;
+}
+
+QPushButton:hover
+{
+	color: rgb(255, 255, 0);
+	border-color: rgb(255, 255, 127);
+}
+
+QPushButton:pressed
+{
+	border:none;
+	background-color: rgb(85, 170, 255);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>添加好友</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="addGroup">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	color:red;
+	font: 12pt &quot;Microsoft YaHei UI&quot;;
+}
+
+QPushButton:hover
+{
+	color: rgb(255, 255, 0);
+	border-color: rgb(255, 255, 127);
+}
+
+QPushButton:pressed
+{
+	border:none;
+	background-color: rgb(85, 170, 255);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>添加群聊</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="createGroup">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	color:red;
+	font: 12pt &quot;Microsoft YaHei UI&quot;;
+}
+
+QPushButton:hover
+{
+	color: rgb(255, 255, 0);
+	border-color: rgb(255, 255, 127);
+}
+
+QPushButton:pressed
+{
+	border:none;
+	background-color: rgb(85, 170, 255);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>创建群聊</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
